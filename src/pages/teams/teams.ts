@@ -3,7 +3,7 @@ import { NavController, NavParams } from 'ionic-angular';
 
 import { TournamentsPage } from '../pages'
 
-import { TeamDetailPage } from '../pages'
+import { TeamHomePage } from '../pages'
 /*
   Generated class for the Teams page.
 
@@ -28,7 +28,7 @@ export class TeamsPage {
 
   itemTapped($event, teams){
   	// console.log('item Tapped in side the teams.ts page');
-  	this.navCtrl.push(TeamDetailPage, teams);
+  	this.navCtrl.push(TeamHomePage, teams);
   }
 
 
