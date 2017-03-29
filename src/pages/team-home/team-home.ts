@@ -17,12 +17,17 @@ import { StandingsPage, TeamDetailPage } from '../pages';
 })
 export class TeamHomePage {
 
+	teams: any; 
 	// adding class memebers for the pages we imported. 
 	TeamDetailTab = TeamDetailPage;
 	StandingsTab = StandingsPage; 
 	
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  	this.teams = this.navParams.data;
+  	console.log(' team-home this.teams = ',this.teams )
+  }
+
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad TeamHomePage');

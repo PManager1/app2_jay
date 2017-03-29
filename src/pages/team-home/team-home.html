@@ -6,14 +6,14 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>TeamHome</ion-title>
+  <ion-navbar primary>
+    <ion-title>{{teams.name}}</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-tabs>
-	<ion-tab tabTitle ="Team " [root]="TeamDetailTab" tabIcon="basketBall"> </ion-tab>	
-	<ion-tab tabTitle ="Standings" [root]="StandingsTab" tabIcon="podium"> </ion-tab>	
+	<ion-tab tabTitle ="Team " [root]="TeamDetailTab" [rootParams]="teams" tabIcon="basketBall"> </ion-tab>	
+	<ion-tab tabTitle ="Standings" [root]="StandingsTab" [rootParams]="teams" tabIcon="podium"> </ion-tab>	
 </ion-tabs>
