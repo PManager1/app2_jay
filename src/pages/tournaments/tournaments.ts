@@ -1,7 +1,8 @@
+
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
-import { TeamsPage } from '../pages'
+import { MyTeamsPage, TeamsPage } from '../pages'
 
 /*
   Generated class for the Tournaments page.
@@ -16,6 +17,10 @@ import { TeamsPage } from '../pages'
 export class TournamentsPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
+
+  itemTapped(){
+  	this.navCtrl.push(TeamsPage);
+  }
 
   gotoTeam() {
   	  	console.log( '23- gotoTeam func called');

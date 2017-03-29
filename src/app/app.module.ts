@@ -8,6 +8,9 @@ import { TeamsPage } from '../pages/teams/teams';
 
 import { TournamentsPage } from '../pages/tournaments/tournaments';
 
+import { TeamDetailPage } from '../pages/pages';
+
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -18,7 +21,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     Page1,
     Page2,
     TeamsPage,
-    TournamentsPage
+    TournamentsPage,
+    TeamDetailPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -29,7 +33,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     Page1,
     Page2,
     TeamsPage,
-    TournamentsPage
+    TournamentsPage,
+    TeamDetailPage
   ],
   providers: [
     StatusBar,
