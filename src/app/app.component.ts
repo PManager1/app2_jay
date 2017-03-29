@@ -3,10 +3,11 @@ import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import { Page1 } from '../pages/page1/page1';
-import { Page2 } from '../pages/page2/page2';
+import { Page1 } from '../pages/pages';
+import { Page2 } from '../pages/pages';
 
-import { TeamsPage } from '../pages/teams/teams';
+// import { TeamsPage } from '../pages/teams/teams';
+import { TeamsPage } from '../pages/pages';
 
 @Component({
   templateUrl: 'app.html'
@@ -22,7 +23,7 @@ export class MyApp {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
-    
+
     // this.pages = [
     //   { title: 'Page One/1', component: Page1 },
     //   { title: 'Page Two', component: Page2 }
@@ -45,3 +46,23 @@ export class MyApp {
     this.nav.setRoot(page.component);
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
