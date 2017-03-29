@@ -29,6 +29,12 @@ export class TeamHomePage {
   }
 
 
+goHome(){
+	// this.navCtrl.push(MyTeamsPage);
+	this.navCtrl.popToRoot();
+} 
+
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad TeamHomePage');
   }
