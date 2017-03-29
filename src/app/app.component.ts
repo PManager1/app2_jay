@@ -8,6 +8,7 @@ import { Page2 } from '../pages/pages';
 
 // import { TeamsPage } from '../pages/teams/teams';
 import { TeamsPage } from '../pages/pages';
+import { TournamentsPage } from '../pages/pages';
 
 @Component({
   templateUrl: 'app.html'
@@ -15,7 +16,7 @@ import { TeamsPage } from '../pages/pages';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = TeamsPage;
+  rootPage: any = TournamentsPage;
 
   pages: Array<{title: string, component: any}>;
 
