@@ -2,16 +2,23 @@ import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-
 import { Page1 } from '../pages/pages';
 import { Page2 } from '../pages/pages';
+
+import { HttpModule } from '@angular/http';
 
 // import { TeamsPage } from '../pages/teams/teams';
 import { TeamsPage } from '../pages/pages';
 import { TournamentsPage } from '../pages/pages';
 
+import {EliteApi} from './shared/shared';
+
 @Component({
-  templateUrl: 'app.html'
+  templateUrl: 'app.html',
+  providers: [
+  EliteApi,
+  HttpModule
+  ]
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
