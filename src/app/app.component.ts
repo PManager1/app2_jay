@@ -11,7 +11,7 @@ import { HttpModule } from '@angular/http';
 import { TeamsPage } from '../pages/pages';
 import { TournamentsPage } from '../pages/pages';
 
-import {EliteApi} from './shared/shared';
+import { EliteApi } from '../shared/shared';
 
 @Component({
   templateUrl: 'app.html',

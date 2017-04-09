@@ -4,12 +4,12 @@ import { Http, Response } from '@angular/http';
 
 @Injectable ()
 export class EliteApi {
-	private baseUrl = 'https://www.reddit.com/r/gifs/new/.json?limit=10%27).map(res'; 
+	private baseUrl = "https://www.reddit.com/r/gifs/new/.json?limit=10%27).map(res"; 
 	constructor(private http: Http){
 	}
 
 
-		getRedditData(){
+		getTournaments(){
 			console.log('calling getRedditData');
 			return new Promise ( resolve => {
 				this.http.get('${this.baseUrl}')
