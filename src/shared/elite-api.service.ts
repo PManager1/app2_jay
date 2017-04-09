@@ -4,7 +4,8 @@ import { Http, Response } from '@angular/http';
 
 @Injectable ()
 export class EliteApi {
-	private baseUrl = "https://www.reddit.com/r/gifs/new/.json?limit=10%27).map(res"; 
+	// private baseUrl = "https://www.reddit.com/r/gifs/new/.json?limit=10%27).map(res"; 
+	private baseUrl = "https://www.google.com"; 	
 	constructor(private http: Http){
 	}
 
